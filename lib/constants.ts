@@ -1,0 +1,106 @@
+import type { DitherAlgorithm } from "./types"
+
+export const DITHERING_ALGORITHMS = [
+  { id: "floydSteinberg", name: "Floyd-Steinberg" },
+  { id: "atkinson", name: "Atkinson" },
+  { id: "jarvisJudiceNinke", name: "Jarvis-Judice-Ninke" },
+  { id: "stucki", name: "Stucki" },
+  { id: "burkes", name: "Burkes" },
+  { id: "sierra", name: "Sierra" },
+  { id: "twoRowSierra", name: "Two-Row Sierra" },
+  { id: "sierraLite", name: "Sierra Lite" },
+  { id: "bayer", name: "Bayer Matrix" },
+  { id: "ordered", name: "Ordered" },
+  { id: "clustered", name: "Clustered Dot" },
+  { id: "halftone", name: "Halftone" },
+  { id: "threshold", name: "Simple Threshold" },
+  { id: "random", name: "Random" },
+  { id: "dotScreen", name: "Dot Screen" },
+  { id: "crossHatch", name: "Cross Hatch" },
+  { id: "errorDiffusion", name: "Error Diffusion" },
+  { id: "riemersma", name: "Riemersma" },
+  { id: "falseDiffusion", name: "False Diffusion" },
+  { id: "pattern", name: "Pattern Dithering" },
+]
+
+export const DEFAULT_SETTINGS = {
+  algorithm: "floydSteinberg" as DitherAlgorithm,
+  threshold: 128,
+  diffusionFactor: 0.75,
+  matrixSize: 8,
+  colorReduction: 8,
+  serpentine: true,
+  noiseAmount: 0,
+  passes: 1,
+}
+
+export const PRESET_EXAMPLES = [
+  {
+    id: "preset-1",
+    name: "Classic Floyd-Steinberg",
+    description: "The original error diffusion algorithm, perfect for retro graphics",
+    settings: {
+      ...DEFAULT_SETTINGS,
+      algorithm: "floydSteinberg",
+      threshold: 128,
+      diffusionFactor: 1.0,
+      colorReduction: 1,
+    },
+    createdAt: Date.now(),
+  },
+  {
+    id: "preset-2",
+    name: "Atkinson Newsprint",
+    description: "Simulates the look of old newspaper photos",
+    settings: {
+      ...DEFAULT_SETTINGS,
+      algorithm: "atkinson",
+      threshold: 128,
+      diffusionFactor: 0.75,
+      colorReduction: 1,
+    },
+    createdAt: Date.now(),
+  },
+  {
+    id: "preset-3",
+    name: "Bayer Matrix Halftone",
+    description: "Classic ordered dithering with a comic book feel",
+    settings: {
+      ...DEFAULT_SETTINGS,
+      algorithm: "bayer",
+      threshold: 128,
+      matrixSize: 8,
+      colorReduction: 1,
+    },
+    createdAt: Date.now(),
+  },
+  {
+    id: "preset-4",
+    name: "CRT Simulation",
+    description: "Mimics the look of old CRT monitors",
+    settings: {
+      ...DEFAULT_SETTINGS,
+      algorithm: "dotScreen",
+      threshold: 128,
+      matrixSize: 4,
+      colorReduction: 6,
+      noiseAmount: 0.1,
+    },
+    createdAt: Date.now(),
+  },
+  {
+    id: "preset-5",
+    name: "Vaporwave Grid",
+    description: "Stylized dithering with a retro-futuristic aesthetic",
+    settings: {
+      ...DEFAULT_SETTINGS,
+      algorithm: "ordered",
+      threshold: 160,
+      matrixSize: 4,
+      colorReduction: 5,
+      noiseAmount: 0.2,
+      passes: 2,
+    },
+    createdAt: Date.now(),
+  },
+]
