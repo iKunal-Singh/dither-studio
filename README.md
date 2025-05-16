@@ -1,6 +1,6 @@
 # INTRODUCTION TO DITHER LABS
 
-**Dither Labs** is a powerful, GPU-accelerated platform designed for applying dithering effects to images and videos. Dithering is a technique used to create the illusion of color depth in images with a limited color palette.
+**Dither Labs** is a powerful, GPU-accelerated platform designed for applying dithering effects to images and videos.
 
 ## WHAT IS DITHERING?
 
