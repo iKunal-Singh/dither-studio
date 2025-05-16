@@ -1,30 +1,21 @@
-# Customizable Dithering Platform
+# INTRODUCTION TO DITHER LABS
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+**Dither Labs** is a powerful, GPU-accelerated platform designed for applying dithering effects to images and videos. Dithering is a technique used to create the illusion of color depth in images with a limited color palette.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/ikunalsinghs-projects/v0-customizable-dithering-platform)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/57A8iuH3cpp)
+## WHAT IS DITHERING?
 
-## Overview
+Dithering is a technique used in computer graphics to create the illusion of color depth in images with a limited color palette. By applying patterns of dots, the human eye blends these patterns to perceive a wider range of colors than is actually present.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+---
 
-## Deployment
+### ⚡ GPU-ACCELERATED  
+Leverages WebGL for real-time processing, allowing for instant feedback and high-performance rendering.
 
-Your project is live at:
+### 🧠 MULTIPLE ALGORITHMS  
+Supports 20+ dithering algorithms, each with unique characteristics and visual effects.
 
-**[https://vercel.com/ikunalsinghs-projects/v0-customizable-dithering-platform](https://vercel.com/ikunalsinghs-projects/v0-customizable-dithering-platform)**
+### 🎛️ CUSTOMIZABLE PRESETS  
+Save, share, and apply custom dithering configurations with the preset system.
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/57A8iuH3cpp](https://v0.dev/chat/projects/57A8iuH3cpp)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### 🎚️ FINE-TUNED CONTROL  
+Adjust every aspect of the dithering process with intuitive controls and real-time preview.
